@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 100%;
+            position: fixed;
+          gap: 20px;
+          
+        }
+        
+        
+       .container{
+        display: grid;
+        grid-template-areas: 
+        'header  menu main right'
+         'hero hero  main  point'
+         'text text extra point'
+         'text text footer footer'
+         /* 'header header  header '
+        'menu menu menu '
+        'main main main '
+        'right right right '
+        'hero hero hero '
+        'point point point '
+        'text text text '
+        'extra extra extra '
+        'footer footer footer '*/; 
+        background-color: blue;
+         
+       }
+       .item1{
+        grid-area: header;
+         height: 125px;
+        
+       } .item2{
+        grid-area: menu;
+        height: 125px;
+       }
+       .item3{
+        grid-area: main;
+        height: 150px;
+        
+       }
+       .item4{
+        grid-area: right;
+        height: 125px;
+       }
+       .item5{
+        grid-area: hero;
+        height: 125px;
+       }
+       .item6{
+        grid-area: point;
+        height: 125px;
+       }
+       .item7{
+        grid-area: text;
+        height: 125px;
+       }
+       .item8{
+        grid-area: extra;
+        height: 125px;
+       }
+       .item9{
+        grid-area: footer;
+        height: 125px;
+       }
+       .container>div{
+       
+        font-size: 30px;
+
+        
+     }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="item1"><img src="img1.jpg" alt="" width="100%" height="130px" ></div>
+    <div class="item2"><img src="img2.jpg" alt="" width="100%" height="130px"></div>
+    <div class="item3"><img src="img3.jpg" alt="" width="100%" height="283px"></div>
+    <div class="item4"><img src="img4.jpg" alt="" width="100%" height="130px"></div>
+    <div class="item5"><img src="img5.jpg" alt="" width="100%" height="140px"></div>
+    <div class="item6"><img src="img6.jpg" alt="" width="100%" height="250px"></div>
+    <div class="item7"><img src="img7.jpg" alt="" width="100%" height="220px"></div>
+    <div class="item8"><img src="img8.jpg" alt="" width="100%" height="130px"></div>
+    <div class="item9"><img src="img9.jpg" alt=""width="100%" height="100px"></div>
+    </div>
+</body>
+</html>
